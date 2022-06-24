@@ -1,0 +1,17 @@
+server:
+  port: 30001
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  application:
+    name: ${service_prefix:cryboy007-}oneself
+  cloud:
+    nacos:
+      config:
+        file-extension: properties
+        server-addr: ${nacos_addr:}
+        prefix: ${nacos_prifix:oneself}
+        namespace: ${nacos_namespace:}
+
