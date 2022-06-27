@@ -14,4 +14,4 @@ EXPOSE 8080
 
 WORKDIR /tmp
 
-ENTRYPOINT java -Xms128M -Xmx256M -jar /app.jar
+ENTRYPOINT java --add-opens java.base/java.lang=ALL-UNNAMED -Xms128M -Xmx256M -jar /app.jar

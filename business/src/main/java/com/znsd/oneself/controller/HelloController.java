@@ -2,7 +2,7 @@ package com.znsd.oneself.controller;
 
 import com.znsd.oneself.common.BusinessCode;
 import com.znsd.oneself.exception.BizException;
-import com.znsd.oneself.message.Result;
+import com.znsd.oneself.util.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

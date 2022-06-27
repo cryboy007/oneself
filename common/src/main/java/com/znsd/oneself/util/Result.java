@@ -1,8 +1,5 @@
-package com.znsd.oneself.message;
+package com.znsd.oneself.util;
 
-import com.znsd.oneself.utils.I18nUtil;
-import com.znsd.oneself.utils.TurnDate;
-import com.znsd.oneself.utils.UuidUtil;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

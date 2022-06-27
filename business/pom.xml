@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>business</artifactId>
-
+    <packaging>jar</packaging>
     <dependencies>
 
         <dependency>
@@ -19,11 +19,11 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>pw.jonwinters.common</groupId>
             <artifactId>auto-generate-enum-api-parent</artifactId>
             <version>1.0.1</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <profiles>

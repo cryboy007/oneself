@@ -1,4 +1,4 @@
-package com.znsd.oneself.utils;
+package com.znsd.oneself.util;
 
 import com.google.common.collect.Sets;
 
@@ -10,8 +10,6 @@ import java.util.HashSet;
  * @Since 2022/6/8 14:01
  */
 public class Demo {
-    public static void main(String[] args) {
-    }
 
     private static void listDiff() {
         HashSet<Integer> setA = Sets.newHashSet(1, 2, 3, 4, 5);

@@ -1,4 +1,4 @@
-package com.znsd.oneself.utils;
+package com.znsd.oneself.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

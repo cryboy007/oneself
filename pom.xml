@@ -37,15 +37,21 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <!--使用-Dloader.path需要在打包的时候增加<layout>ZIP</layout>，不指定的话-Dloader.path不生效-->
+                    <layout>ZIP</layout>
+                    <!-- 指定该jar包启动时的主类[建议] -->
+                    <mainClass>com.znsd.oneself.OneselfApplication</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
+
 
 </project>

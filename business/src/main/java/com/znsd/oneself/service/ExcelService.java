@@ -8,11 +8,8 @@ import com.alibaba.excel.event.AnalysisEventListener;
 import com.alibaba.excel.metadata.data.ReadCellData;
 import com.alibaba.excel.read.metadata.ReadSheet;
 import com.alibaba.excel.util.ConverterUtils;
-import com.alibaba.excel.util.DateUtils;
 import com.google.common.collect.Maps;
-import com.znsd.oneself.message.Result;
-import com.znsd.oneself.utils.HttpUtils;
-import liquibase.util.FileUtil;
+import com.znsd.oneself.util.Result;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jsqlparser.expression.StringValue;
@@ -28,10 +25,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.URLEncoder;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -53,7 +48,7 @@ import java.util.stream.Stream;
 public class ExcelService {
     private final HttpServletResponse httpServletResponse;
 
-    public Result<?> generateSql(MultipartFile multipartFile, boolean generateTable, Integer headRow,boolean export) throws IOException {
+    public Result<?> generateSql(MultipartFile multipartFile, boolean generateTable, Integer headRow, boolean export) throws IOException {
         if (generateTable) {
             //todo 生成临时表
         }

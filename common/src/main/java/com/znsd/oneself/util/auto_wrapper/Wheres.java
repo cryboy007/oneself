@@ -1,4 +1,4 @@
-package com.znsd.oneself.utils.auto_wrapper;
+package com.znsd.oneself.util.auto_wrapper;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

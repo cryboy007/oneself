@@ -1,7 +1,7 @@
 package com.znsd.oneself.exception;
 
 
-import com.znsd.oneself.utils.I18nUtil;
+import com.znsd.oneself.util.I18nUtil;
 
 /**
  * 业务异常编码接口
