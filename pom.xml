@@ -19,9 +19,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>oneself</name>
     <description>项目体验</description>
+
     <properties>
         <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -30,28 +35,4 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!--使用-Dloader.path需要在打包的时候增加<layout>ZIP</layout>，不指定的话-Dloader.path不生效-->
-                    <layout>ZIP</layout>
-                    <!-- 指定该jar包启动时的主类[建议] -->
-                    <mainClass>com.znsd.oneself.OneselfApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-
 </project>
