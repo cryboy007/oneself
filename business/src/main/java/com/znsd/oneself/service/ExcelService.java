@@ -66,8 +66,9 @@ public class ExcelService {
         stopWatch.stop();
         log.debug("耗时:{}",stopWatch.prettyPrint());
         StringBuffer sb = new StringBuffer();
-        result.forEach((k,v) -> sb.append("#").append(k).append("\r\n").append(v));
-        final String fileName = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) +  multipartFile.getOriginalFilename() + ".sql";
+        result.forEach((k,v) -> sb.append("\r\n#").append(k).append("\r\n").append(v));
+        final String[] split = Objects.requireNonNull(multipartFile.getOriginalFilename()).split("[.]");
+        final String fileName = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + split[0]  + ".sql";
         //弹出下载
         if (export) {
             popWeb(sb.toString(), fileName);
