@@ -72,7 +72,7 @@ public class ExcelService {
         //弹出下载
         if (export) {
             popWeb(sb.toString(), fileName);
-            return Result.success(Void.class);
+            return null;
         }
         return Result.success(sb);
     }
