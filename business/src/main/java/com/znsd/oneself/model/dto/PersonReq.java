@@ -16,7 +16,7 @@ public class PersonReq extends BaseMergerReq<PersonResp> {
     private Long id;
 
     @Override
-    protected Supplier<? extends Comparable> param() {
+    protected Supplier<? extends Comparable> requestId() {
         return () -> id;
     }
 }

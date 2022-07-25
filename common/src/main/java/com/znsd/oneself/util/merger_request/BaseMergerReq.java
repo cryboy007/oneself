@@ -14,10 +14,8 @@ import java.util.function.UnaryOperator;
  * @Since 2022/7/25 10:30
  */
 @Data
-public abstract class BaseMergerReq<T>{
+public abstract class BaseMergerReq<T> extends BaseMergerResp{
     private CompletableFuture<T> result;
 
-    /** 唯一键*/
-    protected abstract Supplier<? extends Comparable> param();
 
 }

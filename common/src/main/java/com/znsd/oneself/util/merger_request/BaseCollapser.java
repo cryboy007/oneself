@@ -53,7 +53,7 @@ public abstract class BaseCollapser<T extends BaseMergerResp,R extends BaseMerge
                 final R request = requestQueue.poll();
                 if (Objects.nonNull(request)) {
                     requestQueueTmp.add(request);
-                    Comparable comparator = request.param().get();
+                    Comparable comparator = request.requestId().get();
                     requestParams.add(comparator);
                 }
             }
@@ -65,7 +65,7 @@ public abstract class BaseCollapser<T extends BaseMergerResp,R extends BaseMerge
                             Collectors.toMap(detail -> detail.requestId().get(), Function.identity(), (key1, key2) -> key2));
                     // 通知请求的线程
                     for (R request : requestQueueTmp) {
-                        request.getResult().complete(collect.get(request.param().get()));
+                        request.getResult().complete(collect.get(request.requestId().get()));
                     }
 
                 } catch (Exception e) {
