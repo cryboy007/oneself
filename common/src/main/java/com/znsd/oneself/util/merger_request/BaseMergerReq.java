@@ -1,12 +1,8 @@
 package com.znsd.oneself.util.merger_request;
 
 import lombok.Data;
-import org.apache.poi.ss.formula.functions.T;
 
-import java.util.Comparator;
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Supplier;
-import java.util.function.UnaryOperator;
 
 /**
  * @ClassName BaseMergerReq
@@ -14,8 +10,9 @@ import java.util.function.UnaryOperator;
  * @Since 2022/7/25 10:30
  */
 @Data
-public abstract class BaseMergerReq<T> extends BaseMergerResp{
-    private CompletableFuture<T> result;
+public  class BaseMergerReq<A,E>{
+    private CompletableFuture<E> result;
 
+    private A first;
 
 }

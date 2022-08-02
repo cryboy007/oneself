@@ -11,12 +11,6 @@ import java.util.function.Supplier;
  * @Since 2022/7/25 11:23
  */
 @Data
-public class PersonReq extends BaseMergerReq<PersonResp> {
+public class PersonReq extends BaseMergerReq<Long,PersonResp> {
     private String username;
-    private Long id;
-
-    @Override
-    protected Supplier<? extends Comparable> requestId() {
-        return () -> id;
-    }
 }
