@@ -1,7 +1,7 @@
 package com.znsd.oneself.validation;
 
 
-import com.znsd.oneself.utils.StringUtil;
+import com.znsd.oneself.util.StringUtil;
 import com.znsd.oneself.validation.constraints.Length;
 
 import javax.validation.ConstraintValidator;

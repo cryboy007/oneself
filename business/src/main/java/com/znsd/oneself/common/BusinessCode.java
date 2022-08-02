@@ -2,9 +2,7 @@ package com.znsd.oneself.common;
 
 import com.znsd.oneself.exception.BizException;
 import com.znsd.oneself.exception.ICode;
-import com.znsd.oneself.utils.I18nUtil;
-
-import java.text.MessageFormat;
+import com.znsd.oneself.util.I18nUtil;
 
 /**
  * @enumName BusinessCode

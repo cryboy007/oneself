@@ -1,4 +1,4 @@
-package com.znsd.oneself.utils.auto_wrapper;/*
+package com.znsd.oneself.util.auto_wrapper;/*
 package com.github.cryboy007.utils.auto_wrapper;//package cn.xiaoke.damowang_boot_test.util.auto_wrapper;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;

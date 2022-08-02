@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableNacosConfig(globalProperties = @NacosProperties(serverAddr = "${nacos_addr:127.0.0.1:8848}"))
 @NacosPropertySource(dataId = "${dataId:oneself-dev}.properties", autoRefreshed = true)
+@NacosPropertySource(dataId = "${job.dataId:xxl-job}.properties", autoRefreshed = true)
 public class NacosConfiguration {
 
 }

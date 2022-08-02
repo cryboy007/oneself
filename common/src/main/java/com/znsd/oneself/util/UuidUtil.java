@@ -1,4 +1,4 @@
-package com.znsd.oneself.utils;
+package com.znsd.oneself.util;
 
 import java.util.UUID;
 

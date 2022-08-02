@@ -8,10 +8,10 @@ RUN rm -f /etc/localtime \
 
 MAINTAINER he tao <study.hetao@foxmail.com>
 
-ADD ./target/*.jar app.jar
+ADD ./business/target/*.jar app.jar
 
-EXPOSE 8080
+EXPOSE 30001
 
 WORKDIR /tmp
 
-ENTRYPOINT java -Xms128M -Xmx256M -jar /app.jar
+ENTRYPOINT java --add-opens java.base/java.lang=ALL-UNNAMED -Xms128M -Xmx256M -jar /app.jar

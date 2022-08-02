@@ -1,4 +1,4 @@
-package com.znsd.oneself.utils;
+package com.znsd.oneself.util;
 
 import java.text.ParseException;
 import java.text.ParsePosition;
@@ -195,10 +195,6 @@ public class TurnDate {
 		SimpleDateFormat formatter = new SimpleDateFormat(sformat);
 		String dateString = formatter.format(currentTime);
 		return dateString;
-	}
-
-	public static void main(String[] args) {
-		System.out.println(getNow());
 	}
 
 }

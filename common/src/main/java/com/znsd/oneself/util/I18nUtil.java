@@ -1,16 +1,12 @@
-package com.znsd.oneself.utils;
+package com.znsd.oneself.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
 
 @Component
 public class I18nUtil {
