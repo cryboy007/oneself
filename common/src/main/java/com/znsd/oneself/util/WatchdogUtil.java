@@ -12,13 +12,13 @@ import java.util.concurrent.TimeUnit;
 public class WatchdogUtil {
     public static void main(String[] args) {
         System.out.println(TimeUnit.SECONDS.toMillis(2));
-        /*Watchdog watchdog = new Watchdog(TimeUnit.MILLISECONDS.toSeconds(1));
+        Watchdog watchdog = new Watchdog(TimeUnit.MILLISECONDS.toSeconds(1));
         final Thread t = Thread.currentThread();
         watchdog.addTimeoutObserver(w -> {
             t.interrupt();
             w.stop();
         });
         watchdog.start();
-        watchdog.stop();*/
+        watchdog.stop();
     }
 }
