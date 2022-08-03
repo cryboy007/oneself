@@ -2,7 +2,7 @@ build_date=`date +%m%d%H`
 echo "build_date 月日=${build_date}"
 project_tag="${brancher}_${build_date}"
 echo "project_tag=${brancher}"
-docker_imageinfo= "${CONTAINER}:${project_tag}"
+docker_imageinfo="${CONTAINER}:${project_tag}"
 echo "docker_imageinfo=${docker_imageinfo}"
 #强制停止
 #docker stop `docker ps -a | grep -w ${CONTAINER} | awk '{print $1}'`
