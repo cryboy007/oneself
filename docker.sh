@@ -1,3 +1,4 @@
+#!/bin/bash
 build_date=`date +%m%d%H`
 echo "build_date 月日=${build_date}"
 project_tag="${brancher}_${build_date}"
